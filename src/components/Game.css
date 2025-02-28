@@ -1,0 +1,54 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.game-info {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.game-board {
+  position: relative;
+  width: 480px;
+  height: 330px;
+  background-color: #222;
+  border: 2px solid #444;
+}
+
+.player {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.enemy {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #F44336;
+  border-radius: 3px;
+  z-index: 5;
+}
+
+.item {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  margin: 5px;
+  z-index: 2;
+}
+
+.item.health {
+  background-color: #03A9F4;
+}
+
+.item.weapon {
+  background-color: #FFC107;
+}
